@@ -30,19 +30,19 @@ export class SeatsService {
     });
   }
 
-  findAll() {
-    return `This action returns all seats`;
-  }
+  // findAll() {
+  //   return `This action returns all seats`;
+  // }
 
-  findOne(id: number) {
-    return `This action returns a #${id} seat`;
-  }
+  // findOne(id: number) {
+  //   return `This action returns a #${id} seat`;
+  // }
 
-  update(id: number, updateSeatDto: UpdateSeatDto) {
-    return `This action updates a #${id} seat`;
-  }
+  // update(id: number, updateSeatDto: UpdateSeatDto) {
+  //   return `This action updates a #${id} seat`;
+  // }
 
-  async remove(id: number): Promise<void> {
-    await this.seatRepository.delete(id);
-  }
+  // async remove(id: number): Promise<void> {
+  //   await this.seatRepository.delete(id);
+  // }
 }

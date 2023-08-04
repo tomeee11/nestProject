@@ -5,13 +5,15 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { Show } from './entities/show.entity';
 import { UsersModule } from 'src/auth/auth.module';
 import { JwtModule } from '@nestjs/jwt';
+import { config } from 'dotenv';
+config();
 
 @Module({
   imports: [
     TypeOrmModule.forFeature([Show]),
     UsersModule,
     JwtModule.register({
-      secret: 'SECRET_KET',
+      secret: process.env.DATABASE_SECRET_KEY,
       signOptions: { expiresIn: '300s' },
     }),
   ],

@@ -28,23 +28,23 @@ export class SeatsController {
     return this.seatsService.create(id, createSeatDto);
   }
 
-  @Get()
-  findAll() {
-    return this.seatsService.findAll();
-  }
+  // @Get()
+  // findAll() {
+  //   return this.seatsService.findAll();
+  // }
 
-  @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.seatsService.findOne(+id);
-  }
+  // @Get(':id')
+  // findOne(@Param('id') id: string) {
+  //   return this.seatsService.findOne(+id);
+  // }
 
-  @Patch(':id')
-  update(@Param('id') id: string, @Body() updateSeatDto: UpdateSeatDto) {
-    return this.seatsService.update(+id, updateSeatDto);
-  }
+  // @Patch(':id')
+  // update(@Param('id') id: string, @Body() updateSeatDto: UpdateSeatDto) {
+  //   return this.seatsService.update(+id, updateSeatDto);
+  // }
 
-  @Delete(':id')
-  remove(@Param() id: number) {
-    return this.seatsService.remove(id);
-  }
+  // @Delete(':id')
+  // remove(@Param() id: number) {
+  //   return this.seatsService.remove(id);
+  // }
 }
